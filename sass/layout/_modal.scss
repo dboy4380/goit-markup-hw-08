@@ -1,0 +1,199 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  padding: 40px;
+  width: 528px;
+  height: 581px;
+  background-color: var(--first-back-color);
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-close {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-close:hover,
+.btn-close:focus {
+  fill: var(--accent-color);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scrolle {
+  overflow: hidden;
+}
+
+.modal-hidline {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--logo-second-color);
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 30px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-input:focus + .modal-icon {
+  fill: var(--accent-color);
+}
+
+.modal-lable {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--accessory-text-color);
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 30%;
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-wrap:hover {
+  fill: var(--accent-color);
+}
+
+.modal-text {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  padding: 12px 16px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-text:hover,
+.modal-text:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-checkbox {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accessory-text-color);
+}
+
+.modal-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+  margin-left: 5px;
+  outline: none;
+}
+
+.moda.link:hover,
+.moda.link:focus {
+  background-color: var(--accessory-text-color);
+}
+
+.checkbox-position {
+  margin-left: 10px;
+}
+
+.modal-btn {
+  margin: 30px 125px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--first-back-color);
+  background: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 55px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background: var(--background-box-color);
+  color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.modal-check-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accessory-text-color);
+  display: flex;
+  margin-top: 20px;
+}
+
+.modal-check-text::before {
+  content: "";
+  margin-right: 10px;
+  margin-top: 4px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--logo-second-color);
+  border-radius: 2px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check:checked + .modal-check-text::before {
+  background-color: var(--accent-color);
+  background-image: url(../images/check.svg);
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}

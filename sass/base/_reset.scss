@@ -1,0 +1,38 @@
+body {
+  font-family: roboto, sans-serif;
+  color: var(--accessory-text-color);
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--second-back-color);
+  padding: 60px 0;
+}
+
+address {
+  font-style: normal;
+}
