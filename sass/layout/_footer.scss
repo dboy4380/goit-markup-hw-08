@@ -1,10 +1,31 @@
 .footer-area {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 96px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: unset;
+    flex-wrap: nowrap;
+    align-items: unset;
+    gap: unset;
+  }
 }
 
 .connection {
-  padding-right: 70px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-right: 70px;
+  }
   &__footer-logo {
     font-family: raleway, sans-serif;
     font-weight: 700;
@@ -41,6 +62,14 @@
   color: var(--additional-text-color);
 }
 
+.soc-footer {
+  text-align: center;
+  margin: 60px 0 60px 0;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
 .soc-footer__headline {
   display: inline-block;
   font-size: 14px;
@@ -54,7 +83,6 @@
 .soc-footer__list {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .soc-footer__item {
@@ -78,11 +106,47 @@
 }
 
 .footer-subscribe {
-  display: flex;
-  align-items: flex-end;
-  margin-left: 93px;
-  width: 570px;
-  height: 86px;
+  flex-direction: row;
+  align-items: center;
+  gap: unset;
+  width: 50%;
+  height: 156px;
+
+  &__form {
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      gap: 20px;
+      width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      align-items: flex-end;
+      gap: unset;
+      margin-left: auto;
+      width: 570px;
+      height: 86px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
   &__text {
     font-size: 14px;
     line-height: 1.7;

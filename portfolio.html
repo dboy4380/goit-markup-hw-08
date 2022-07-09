@@ -28,13 +28,18 @@
         <a href="./index.html" class="logo header__logo"
           >Web<span class="logo__section">Studio</span></a
         >
+        <div class="header__burger">
+          <span></span>
+        </div>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="./index.html" class="nav__link">Студия</a>
             </li>
-            <li class="nav__item current-link">
-              <a href="./portfolio.html" class="nav__link">Портфолио</a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link current-link"
+                >Портфолио</a
+              >
             </li>
             <li class="nav__item">
               <a href="" class="nav__link">Контакты</a>
@@ -61,6 +66,65 @@
             >
           </li>
         </ul>
+        <div class="mobile-menu">
+          <div class="container">
+            <div class="mob-menu-top">
+              <nav class="mobile-nav">
+                <ul class="mobile-nav__list">
+                  <li class="mobile-nav__item">
+                    <a href="./index.html" class="mobile-nav__link link"
+                      >Студия</a
+                    >
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a
+                      href="./portfolio.html"
+                      class="mobile-nav__link link current-mobile"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="mobile-nav__item">
+                    <a href="" class="mobile-nav__link link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mob-menu-middle">
+              <ul class="mobile-contact">
+                <li class="mobile-contact__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="mobile-contact__link phone-contact"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-contact__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-contact__link mail-contact"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="mob-menu-bottom">
+              <ul class="mobile-soc">
+                <li class="mobile-soc__item">
+                  <a href="#" class="mobile-soc__link link">Instagram</a>
+                </li>
+                <li class="mobile-soc__item">
+                  <a href="#" class="mobile-soc__link link">Twitter</a>
+                </li>
+                <li class="mobile-soc__item">
+                  <a href="#" class="mobile-soc__link link">Facebook</a>
+                </li>
+                <li class="mobile-soc__item">
+                  <a href="#" class="mobile-soc__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -295,14 +359,12 @@
                 >
               </li>
               <li class="connection__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="connection__link contact"
+                <a href="mailto:info@devstudio.com" class="connection__link"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="connection__item">
-                <a href="tel:+380961111111" class="connection__link contact"
+                <a href="tel:+380961111111" class="connection__link"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -341,23 +403,25 @@
           </ul>
         </div>
         <div class="footer-subscribe">
+          <b class="footer-subscribe__text">Подпишитесь на рассылку</b>
           <div class="footer-subscribe__form">
-            <b class="footer-subscribe__text">Подпишитесь на рассылку</b>
             <input
               type="email"
               class="footer-subscribe__input"
               name="email-user"
               placeholder="E-mail"
             />
+            <button type="submit" class="footer-subscribe__btn">
+              Подписаться
+              <svg class="footer-subscribe__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send-1"></use>
+              </svg>
+            </button>
           </div>
-          <button type="submit" class="footer-subscribe__btn">
-            Подписаться
-            <svg class="footer-subscribe__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send-1"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

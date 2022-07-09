@@ -33,8 +33,8 @@
         </div>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item current-link">
-              <a href="./index.html" class="nav__link">Студия</a>
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link current-link">Студия</a>
             </li>
             <li class="nav__item">
               <a href="./portfolio.html" class="nav__link">Портфолио</a>
@@ -70,7 +70,9 @@
               <nav class="mobile-nav">
                 <ul class="mobile-nav__list">
                   <li class="mobile-nav__item">
-                    <a href="./index.html" class="mobile-nav__link link"
+                    <a
+                      href="./index.html"
+                      class="mobile-nav__link link current-mobile"
                       >Студия</a
                     >
                   </li>
@@ -124,7 +126,7 @@
       </div>
     </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__headline">
             Эффективные решения<br />для вашего бизнеса
@@ -133,8 +135,8 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
-      <!-- <section class="characteristics">
+      </section>
+      <section class="characteristics">
         <div class="container">
           <h2 class="characteristics__headline-hidden">Наши характеристики</h2>
           <ul class="characteristics__list list">
@@ -192,13 +194,14 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="workplace">
         <div class="container">
           <h2 class="workplace__headline">Чем мы занимаемся</h2>
           <ul class="workplace__list list">
             <li class="workplace__img-box">
               <img
+                srcset=""
                 class="img"
                 src="images/box1.jpg"
                 alt="Программист пишет код"
@@ -227,7 +230,7 @@
           </ul>
         </div>
       </section> -->
-      <!-- <section class="worekers">
+      <section class="worekers">
         <div class="container">
           <h2 class="worekers__headline">Наша команда</h2>
           <ul class="card-list list">
@@ -404,8 +407,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="clients">
+      </section>
+      <section class="clients">
         <div class="container">
           <h2 class="clients__headline">Постоянные клиенты</h2>
           <ul class="clients__list">
@@ -447,9 +450,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-area">
         <div class="connection">
           <a href="./index.html" class="connection__footer-logo"
@@ -467,14 +470,12 @@
                 >
               </li>
               <li class="connection__item">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="connection__link contact"
+                <a href="mailto:info@devstudio.com" class="connection__link"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="connection__item">
-                <a href="tel:+380961111111" class="connection__link contact"
+                <a href="tel:+380961111111" class="connection__link"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -513,25 +514,25 @@
           </ul>
         </div>
         <div class="footer-subscribe">
+          <b class="footer-subscribe__text">Подпишитесь на рассылку</b>
           <div class="footer-subscribe__form">
-            <b class="footer-subscribe__text">Подпишитесь на рассылку</b>
             <input
               type="email"
               class="footer-subscribe__input"
               name="email-user"
               placeholder="E-mail"
             />
+            <button type="submit" class="footer-subscribe__btn">
+              Подписаться
+              <svg class="footer-subscribe__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send-1"></use>
+              </svg>
+            </button>
           </div>
-          <button type="submit" class="footer-subscribe__btn">
-            Подписаться
-            <svg class="footer-subscribe__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send-1"></use>
-            </svg>
-          </button>
         </div>
       </div>
-    </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-close" data-modal-close>
           <svg class="close-cross" width="19" height="19">
@@ -597,7 +598,7 @@
           <link rel="stylesheet" href="#" />
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./js/mobile-menu.js"></script>
