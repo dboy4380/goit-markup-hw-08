@@ -781,6 +781,7 @@ address {
 }
 .connection__list {
   list-style: none;
+  margin-bottom: 60px;
 }
 .connection__item {
   margin-bottom: 9px;
