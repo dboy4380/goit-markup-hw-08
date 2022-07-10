@@ -23,6 +23,11 @@
     flex-wrap: wrap;
     gap: 30px;
   }
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
@@ -35,9 +40,6 @@
     border-radius: 0px 0px 4px 4px;
     @media screen and (min-width: 768px) {
       width: calc((100% - 30px) / 2);
-    }
-    @media screen and (max-width: 768px) {
-      margin-bottom: 30px;
     }
   }
 }

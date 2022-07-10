@@ -6,6 +6,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
+    justify-content: space-around;
     gap: 96px;
   }
   @media screen and (min-width: 1200px) {
@@ -24,7 +25,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-right: 70px;
+    margin-right: 70px;
+    text-align: unset;
   }
   &__footer-logo {
     font-family: raleway, sans-serif;
@@ -64,9 +66,13 @@
 
 .soc-footer {
   text-align: center;
-  margin: 60px 0 60px 0;
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     margin: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 90px;
   }
 }
 
@@ -106,12 +112,7 @@
 }
 
 .footer-subscribe {
-  flex-direction: row;
-  align-items: center;
-  gap: unset;
-  width: 50%;
-  height: 156px;
-
+  text-align: center;
   &__form {
     @media screen and (min-width: 480px) {
       display: flex;
